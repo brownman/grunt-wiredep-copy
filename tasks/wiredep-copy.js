@@ -24,7 +24,7 @@ module.exports = function(grunt) {
     dependencies.forEach(function(dependency) {
       var dest = wiredepCopy.rename(dependency, options);
       grunt.file.copy(dependency, dest);
-      grunt.log.writeln(dependency + ' -> ' + dest);
+      //grunt.log.writeln(dependency + ' -> ' + dest);
     });
   });
 };
